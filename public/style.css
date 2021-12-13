@@ -1,0 +1,12 @@
+body{
+    background-color: teal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row{
+    width: 1200px;
+    margin-left: 100px;
+}
+.card{
+    margin: 5px;
+}

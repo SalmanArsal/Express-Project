@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="text-center text-light">CREATE POST</h1>
+
+    <div class="col-md-8 m-auto">
+        <form action="/post/create-post" method="post">
+
+            <div class="mb-3">
+                <input class="form-control text-secondary" type="text" placeholder="POST TITLE" name="title">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control text-secondary" cols="100" rows="10" name="details" placeholder="Write post">
+
+                </textarea>
+            </div>
+
+            <div>
+                <input class="btn btn-danger d-block m-auto" type="submit" value="CREATE POST">
+            </div>
+        </form>
+    </div>
+</div>

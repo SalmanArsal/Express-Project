@@ -1,0 +1,29 @@
+
+{{!-- handlebar loop starts--}}
+  <div class="container">
+     <div class="row">
+        {{#each posts}}
+            <div class="card text-center col-md-3">
+            <div class="card-body">
+               <h2 class="card-title bg-warning text-light">
+                  {{title}}
+               </h2>
+               <p class="card-text">
+                  {{details}}
+               </p>
+               <a href="/post/edit/{{_id}}" class="btn btn-info">
+                  Edit
+               </a>
+               <a href="#" class="btn btn-danger">
+                  Delete
+               </a>
+            </div>
+            </div>
+ 
+            {{else}}
+            {{/each}}
+     </div>
+  </div>
+
+  
+  {{!-- handlebar loop ends--}}

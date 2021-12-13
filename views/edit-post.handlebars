@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center text-light">UPDATE POST</h1>
+
+    <div class="col-md-8 m-auto">
+        <form action="/post/edit/{{post._id}}?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+
+            <div class="mb-3">
+                <input class="form-control text-secondary" value="{{post.title}}" type="text" placeholder="POST TITLE" name="title">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control text-secondary" cols="100" rows="10" name="details" placeholder="Write post">
+                    {{post.details}}
+                </textarea>
+            </div>
+
+            <div>
+                <input class="btn btn-success d-block m-auto" type="submit" value="UPDATE POST">
+            </div>
+        </form>
+    </div>
+</div>
