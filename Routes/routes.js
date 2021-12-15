@@ -90,4 +90,14 @@ app.put("/edit/:id" , (req , res) => {
     .catch(err => console.log(err));
 })
 //* PUT route end here
+
+//*DELETE route Starts
+app.delete("/delete/:id" , (req , res ) => {
+    POST.remove({_id: req.params.id})
+    .then(  () => {
+        res.redirect("/post/fetch");
+    }).catch(err => { console.log(err);})
+})
+
+//*DELETE route ends
 export default app;
